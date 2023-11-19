@@ -7,35 +7,109 @@
   <meta name="author" content="Abdul Rahman" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css">
-  <title>Ticket Management System</title>
-  
+  <title>Amin Tours & Travels</title>
+
 </head>
 
 <body>
 
-  <div>
+  <header> <b>Amin Tours & Travels</b> </header>
+  <br><br>
+  <img height="150" src="./images/logo.jpg" alt="Logo" class="Heading">
+  <br>
+  <img height="350" src="./images/three-bus.jpg" alt="Bus" class="top">
 
-    <label for="source">Source:</label>
-    <select id="source">
+
+  <form>
+
+    <label for="source">Select the Source :</label>
+    <select id="source" required>
+      <option value="">--Please choose an option--</option>
       <!-- Populate this dropdown dynamically using JavaScript -->
     </select>
-
-    <label for="destination">Destination:</label>
-    <select id="destination">
+    <br>
+    <label for="destination">Select the Destination :</label>
+    <select id="destination" required>
+      <option value="">--Please choose an option--</option>
       <!-- Populate this dropdown dynamically using JavaScript -->
     </select>
+    <br>
+    <label for="travel-date">Date Of Journey :</label>
+    <input type="date" id="travel-date" required>
+    <br>
+    <button type="button" id="submit">Search Buses</button>
+  </form>
 
-    <label for="travel-date">Travel Date:</label>
-    <input type="date" id="travel-date">
 
-    <button>Search Routes</button>
+  <br><br>
+
+  <h2>About Amin Tours & Travels </h2><br>
+  <p>
+    A tours and travels company you can rely on, when it comes to a comfortable journey throughout. Amin Travels has
+    redefined road travel to a 5 star experience in Safety, luxury, entertainment and ambience.We are dedicated to
+    give you top notch Quality of Service, through a good variety of dedicated Buses to choose from.
+    <br><br>
+    You can be assured of a great experience and overall satisfaction when you choose Amin Travels. Our professional
+    staff and fleet of clean, comfortable, well maintained buses enable us to provide you with the dependable,
+    quality service you deserve.
+  </p>
+
+  <br><br>
+
+  <h2>Download the app NOW !!</h2> <br>
+  <p>
+    We will get you where you want to go. From finding tickets to keep a track of your booking and getting exciting
+    discounts. <br><br>
+    <img height="36" src="./images/google-play.jpg" alt=""> &nbsp;
+    <img height="37" src="./images/apple-store.jpg" alt=""> <br><br><br>
+  </p>
+
+  <h4>Wish you a Happy And Comfortable Journey</h4> <br><br>
+
+  <div class="social-media" style="display: flex; justify-content: space-between;">
+
+    <p class="Link">
+
+      <b>Follow Us On :</b>
+      <br><br>
+      <a target="_blank" href="https://www.instagram.com/a_b_d_u_l__004/">
+        <img height="30" src="./images/instagram.jpg" alt=""> </a>
+      &nbsp;
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100024181572538">
+        <img height="30" src="./images/facebook.jpg" alt=""> </a>
+      &nbsp;
+      <a target="_blank" href="https://web.telegram.org/k/">
+        <img height="30" src="./images/telegram.jpg" alt=""> </a>
+
+    </p>
+    <p class="middle">
+
+      <b>Customer Helpline</b>
+      <br><br>
+      8778500847
+      <br>
+      amintravels.cbe@gmail.com
+
+    </p>
+    <p class="left">
+
+      <b>GET IN TOUCH</b> <br>
+      <b>Amin Tours & Travels</b>
+      <br>
+      Omni Bus Stand, Tatabad,
+      <br>
+      Coimbatore, Tamil Nadu - 641012
+
+    </p>
 
   </div>
 
-  <div id="schedule-results">
-    <!-- Display schedule results here -->
-  </div>
+  <footer> <br>
+    <p>2023 All rights reserved | Amin Tours & Travels </p> <br>
+  </footer>
 
   <script src="app.js"></script>
+
 </body>
+
 </html>

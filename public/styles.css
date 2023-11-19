@@ -1,19 +1,168 @@
+* {
+  margin: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Poppins:wght@500&display=swap');
+
+
 body {
+  background-color: lightgoldenrodyellow;
   font-family: Arial, sans-serif;
-  margin: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-button {
-  margin-top: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
 }
 
 #schedule {
   margin-top: 20px;
+}
+
+header {
+  background-color: orange;
+  color: darkblue;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.Heading {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  max-width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: lightgray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 1%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(8, 8, 134);
+}
+
+input,
+button {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.date {
+  width: auto;
+}
+
+button {
+  background-color: rgb(8, 8, 134);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+.back {
+  background-color: rgb(8, 8, 134);
+  color: #fff;
+  cursor: pointer;
+  width: 10%;
+}
+
+.Link {
+  text-align: right;
+  font-size: 20px;
+  font-style: italic;
+}
+
+footer {
+  background-color: darkorange;
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+  font-size: 15px;
+  bottom: auto;
+  height: auto;
+}
+
+h2 {
+  margin-left: 100px;
+  color: rgb(8, 8, 134);
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+select {
+  height: 40px;
+  font-size: 15px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  color: rgb(8, 8, 134);
+  font-weight: bolder;
+}
+
+.left {
+  text-align: left;
+  font-size: 22px;
+}
+
+.social-media {
+  padding: 15px;
+  background-color: lightslategray;
+  color: white;
+  height: 130px;
+}
+
+.top {
+  margin-left: 1%;
+  margin-top: 50px;
+  height: 400px;
+  border-radius: 50px;
+  float: left;
+}
+
+.form-group {
+  background-color: lightgoldenrodyellow;
+  align-items: center;
+  width: auto;
+  border: 7px solid darkblue;
+  padding: 20px;
+  margin: 10px;
+  height: auto;
+}
+
+.below {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.abelow {
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  width: 98%;
+  padding: 15px;
+  background-color: lightslategray;
+  color: white;
+  height: 130px;
 }
