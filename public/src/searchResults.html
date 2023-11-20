@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Abdul Rahman" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Search Results</title>
+
+</head>
+
+<body>
+
+    <header><a style="text-decoration: none" href="../index.html"><b>Amin Tours & Travels</b></a> </header>
+
+    <div style="text-align:center;" class="form-group" id="searchResultsContainer">
+
+        <label for="source">Source :</label>
+        <select style="width: 200px" id="source" required>
+            <option id="results-source"></option>
+            <!-- Populate this dropdown dynamically using JavaScript -->
+        </select>
+
+        <label for="destination">Destination :</label>
+        <select style="width: 200px" id="destination" required>
+            <option id="results-destination"></option>
+            <!-- Populate this dropdown dynamically using JavaScript -->
+        </select>
+
+        <label for="travel-date">Date :</label>
+        <input style="width: 200px" class="date" type="date" id="travel-date" name="date" value="" required>
+
+        <button class="back" type="button" id="submit"> Search </button>
+
+    </div>
+
+    <div id="schedule-results">
+        <!-- Display schedule results here -->
+    </div>
+
+    <div class="abelow" style="display: flex; justify-content: space-between;">
+        <p class="Link"> <b>Follow Us On :</b> <br> <br>
+            <a target="_blank" href="https://www.instagram.com/a_b_d_u_l__004/">
+                <img height="30" src="../images/instagram.jpg" alt=""> </a>
+            &nbsp;
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100024181572538">
+                <img height="30" src="../images/facebook.jpg" alt=""> </a>
+            &nbsp;
+            <a target="_blank" href="https://web.telegram.org/k/">
+                <img height="30" src="../images/telegram.jpg" alt=""> </a>
+        </p>
+        <p class="middle"><b>Customer Helpline</b><br> <br>
+            8778500847 <br>
+            amintravels.cbe@gmail.com</p>
+        <p class="left"> <b>GET IN TOUCH</b> <br>
+            <small><b>Amin Tours & Travels</b> <br>
+                Hotel Selvam Complex, near by new bus stand,<br>
+                Coimbatore, Tamil Nadu - 641053</small>
+        </p>
+    </div>
+
+    <footer class="below"> <br>
+        <p>2023 All rights reserved | Amin Tours & Travels </p> <br>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

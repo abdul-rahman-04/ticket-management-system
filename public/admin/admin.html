@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Administration Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Bus Administration Portal</h1>
+    </header>
+
+    <section id="add-route">
+        <h2>Add New Route</h2>
+        <form id="add-new-route-form">
+
+            <label for="source">Source:</label>
+            <input type="text" id="add-source" name="source" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="add-destination" name="destination" required>
+
+            <button type="submit" id="add-new-route-button">Add Route</button>
+        </form>
+    </section>
+
+    <section id="add-schedule">
+        <h2>Add New Schedule</h2>
+        <form>
+
+            <label for="source">Source:</label>
+            <select id="source" required>
+                <option value="">--Please choose an option--</option>
+                <!-- Populate this dropdown dynamically using JavaScript -->
+            </select>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" required>
+                <option value="">--Please choose an option--</option>
+                <!-- Populate this dropdown dynamically using JavaScript -->
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="departure-time">Departure Time:</label>
+            <input type="text" id="departure-time" name="departure-time" required>
+
+            <label for="arrival-time">Arrival Time:</label>
+            <input type="text" id="arrival-time" name="arrival-time" required>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required>
+
+            <label for="duration">Duration:</label>
+            <input type="text" id="duration" name="duration" required>
+
+            <label for="seats-available">Seats Available:</label>
+            <input type="text" id="seats-available" name="seats-available" required>
+
+            <button type="submit">Add Route</button>
+        </form>
+
+    </section>
+
+    <section id="update-time">
+        <h2>Update Departure Time</h2>
+        <form>
+
+            <label for="source">Source:</label>
+            <select id="" name="route-time" required>
+                <option value="route1">Route 1</option>
+                <option value="route2">Route 2</option>
+                <option value="route3">Route 3</option>
+            </select>
+
+            <label for="departure-time">New Departure Time:</label>
+            <input type="time" id="departure-time" name="departure-time" required>
+
+            <button type="submit">Update Departure Time</button>
+        </form>
+    </section>
+
+    <section id="bus-availability">
+        <h2>Bus Availability</h2>
+        <ul>
+            <li>Bus 1 - Route A - Available</li>
+            <li>Bus 2 - Route B - Fully Booked</li>
+            <li>Bus 3 - Route C - Available</li>
+        </ul>
+    </section>
+
+    <section id="seat-occupancy">
+        <h2>Manage Seat Occupancy</h2>
+        <form>
+            <label for="route-occupancy">Select Route:</label>
+            <select id="route-occupancy" name="route-occupancy" required>
+                <option value="route1">Route 1</option>
+                <option value="route2">Route 2</option>
+                <option value="route3">Route 3</option>
+            </select>
+
+            <label for="seat-availability">Available Seats:</label>
+            <input type="number" id="seat-availability" name="seat-availability" required>
+
+            <button type="submit">Update Seat Occupancy</button>
+        </form>
+    </section>
+    <script src="admin.js"></script>
+</body>
+
+</html>
